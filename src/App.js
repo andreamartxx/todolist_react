@@ -2,6 +2,13 @@ import React from 'react';
 import './App.css';
 
 function App() {
+
+  const[todos, setTodos] = React.useState([
+    {text: "Learn react"},
+    {text: "Improve english"},
+    {text: "Meet friends"}
+  ]);
+
   return (
     <div className="app">
       <header>
