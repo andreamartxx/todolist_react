@@ -1,6 +1,14 @@
 import React from 'react';
 import './App.css';
 
+function Todo({todo}){
+  return (
+    <div className='todo'>
+      {todo.text}
+    </div>
+  )
+}
+
 function App() {
 
   const[todos, setTodos] = React.useState([
