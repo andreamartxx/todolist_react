@@ -35,6 +35,11 @@ function App() {
     {text: "Meet friends"}
   ]);
 
+  const addTodo = text =>{
+    const newTodos = [...todos, {text}];
+    setTodos(newTodos)
+  }
+
   return (
     <div className="app">
       <header>
