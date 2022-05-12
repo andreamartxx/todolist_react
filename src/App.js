@@ -21,7 +21,17 @@ function App() {
     <div className="app">
       <header>
           <h1>Andrea's ToDo List</h1>
+          <div className='todo-list'>
+            {todos.map((todo, index) => (
+              <Todo
+                key = {index}
+                index = {index}
+                todo = {todo}
+              />
+            ))}
+          </div>
       </header>
+
     </div>
   );
 }
