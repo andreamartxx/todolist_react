@@ -68,6 +68,7 @@ function App() {
                 key = {index}
                 index = {index}
                 todo = {todo}
+                completeTodo = {completeTodo}
               />
             ))}
             <TodoForm addTodo={addTodo} />
