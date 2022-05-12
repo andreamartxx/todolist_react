@@ -49,6 +49,12 @@ function App() {
     setTodos(newTodos)
   }
 
+  const completeTodo = index =>{
+    const newTodos = [...todos];
+    newTodos[index].isCompleted = true;
+    setTodos(newTodos);
+  }
+
   return (
     <div className="app">
       <header>
